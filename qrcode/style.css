@@ -11,7 +11,7 @@ body{
     margin-right: auto;
 }
 
-.container{
+.main{
     display: flex;
     justify-content: center;
     align-content: center;

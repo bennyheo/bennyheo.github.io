@@ -1,0 +1,146 @@
+html, body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.container{
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-around;
+    max-width: 340px;
+    height: 320px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 60px 50px 30px 30px;
+    position:absolute;
+}
+
+.star-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(149, 158, 172, 10%);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+    font-weight: 400;
+    padding: 0;
+}
+
+
+.text-body-wrapper{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    line-height: 150%;
+}
+
+/* rating-button */
+.ratings-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.rating-button{
+    border-radius: 50%;
+    background-color: rgba(149, 158, 172, 10%);
+    color: hsl(216, 12%, 54%);
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-weight: 700;
+}
+
+.rating-button.active, .rating-button:focus {
+    background-color:hsl(217, 12%, 63%);
+    color: white;
+    opacity : 1;
+}
+
+.rating-button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    opacity: 1;
+}
+
+/* Submit button */
+.submit-button-wrapper{
+    padding-bottom: 30px;
+}
+.submit-button {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+/* Thank you form CSS */
+.thankyou-container {
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-around;
+    max-width: 340px;
+    height: 320px;
+    background-color: rgb(31, 36, 45);
+    border-radius: 20px;
+    padding: 60px 50px 30px 30px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.thankyou-img {
+    display: flex;
+    justify-content: center;
+}
+
+.thankyou-rating-selection-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.thankyou-header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.thankyou-body {
+    color:hsl(217, 12%, 63%);
+    text-align: center;
+    font-size: 15px;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+.thankyou-rating-selection {
+    display:flex;
+    justify-content: center;
+    background-color: rgb(40 46 55);
+    border-radius: 20px;
+    width: 75%;
+    color: hsl(25, 97%, 53%);
+    
+}

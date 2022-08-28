@@ -71,6 +71,7 @@ h1{
     background-color: hsl(25, 97%, 53%);
     color: white;
     opacity: 1;
+    cursor: pointer;
 }
 
 /* Submit button */
@@ -93,6 +94,7 @@ h1{
 .submit-button:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 
 

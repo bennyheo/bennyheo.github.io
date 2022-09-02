@@ -16,21 +16,23 @@ body, html {
 }
 
 .zone:not(footer){
-    /*padding:30px 50px;
-    margin:40px 60px;*/
     cursor:pointer;
-    /*display:inline-block;*/
     color:#FFF;
-
-    /*border-radius:4px;*/
     overflow: scroll;
     max-height: 100vh;
     transition: all 0.3s linear;
 }
+
 .zone:hover:not(.green, footer){
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    
+}
+
+.zone:hover h1 {
+
+
 }
 
 /* NAV BAR */
@@ -66,14 +68,11 @@ a {
     text-align: center;
     font-weight: 700;
     color: black;
-
+    transition: 1s;
 }
 
 /* COVER */
-.red {
-    color: black;
-    border-style: none;
-}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -82,26 +81,27 @@ h1 {
 
 .red-wrapper {
     display: flex;
+    opacity: 0;
+    transition: 1s;
 }
 
-.red-img-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 30rem;
-}
-
-
-.red-text-wrapper {
-   
+.red-title-wrapper {   
     justify-content: flex-start;
     flex-wrap: wrap;
     font-size: 20px;
     margin: 100px 100px 100px 100px;
 }
 
-.red-text-body-wrapper{
+.red-text-wrapper{
     margin: 0;
-    padding: 0;
+    padding-top: 50px; 
+}
+
+.red:hover .red-wrapper{
+    opacity: 100;
+}
+.red:hover  .name-title {
+    color: white;
 }
 
 /* BLUE GRID */
@@ -109,20 +109,23 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding-top: 50px;
-    border-style: none;
     opacity: 0;
-  
-}
-.blue-title-wrapper:hover > .blue-wrapper{
-    opacity: 100;
+    transition: 1s;
 }
 
 .blue-title-wrapper {
-    color: white;
     padding-top: 100px;
     padding-left: 20px;
-    
 }
+
+.blue:hover  .blue-wrapper {
+    opacity: 100;
+}
+
+.blue:hover .name-title {
+    color: white;
+}
+
 .blue-img-wrapper img{
     width: 100%;
 }
@@ -132,9 +135,7 @@ h1 {
     background-color: rgba(0,0,0,0.50);
     padding: 10vh;
     margin: 20px;
-    transition: 1s;
     border-radius:20px;
-   
 }
 
 .zone:hover {

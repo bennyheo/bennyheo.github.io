@@ -172,7 +172,7 @@ footer {
     }
 
     .red-text-wrapper {
-        font-size: 25px;
+        font-size: 1.5em;
     }
 
     .blue-img-wrapper {
@@ -180,6 +180,9 @@ footer {
         padding: 50px;
     }
 
+    .red-wrapper {
+        height: 100%;
+    }
 
   
 }

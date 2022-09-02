@@ -72,13 +72,13 @@ h1 {
 .img-box-wrapper {
   display: grid;
   grid-row-start: 1;
-  position: absolute;
+  grid-column-start: 1;
 
 }
 
 .img-box {
   margin-top: 198px;
-  margin-left: -93px;
+  margin-left: -92px;
   
 }
 

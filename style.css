@@ -8,20 +8,20 @@ body, html {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position:relative;
+    
 }
 .animate__animated animate__flip:active {
 --animate-duration: .05s;
 }
 
-.zone:not(footer){
+.zone:not(footer) {
     color:#FFF;
     overflow: scroll;
     max-height: 100vh;
     transition: all 0.3s linear;
 }
 
-.zone:hover:not(.green, footer){
+.zone:hover:not(.green, footer) {
     background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -92,6 +92,7 @@ h1 {
 .red:hover .red-wrapper{
     opacity: 100;
 }
+
 .red:hover  .name-title {
     color: white;
 }
@@ -162,4 +163,23 @@ footer {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media screen {
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .red-text-wrapper {
+        font-size: 25px;
+    }
+
+    .blue-img-wrapper {
+        height: auto;
+        padding: 50px;
+    }
+
+
+  
 }

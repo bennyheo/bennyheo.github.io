@@ -8,8 +8,10 @@ body, html {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    scrollbar-width: none;
+    height: 100%;
 }
+
 .animate__animated animate__flip:active {
 --animate-duration: .05s;
 }
@@ -17,13 +19,17 @@ body, html {
 .zone:not(footer) {
     color:#FFF;
     overflow: scroll;
-    max-height: 100vh;
+    /*max-height: 100vh;*/
     transition: all 0.3s linear;
+}
+
+.zone::-webkit-scrollbar {
+    display: none;
 }
 
 .zone:hover:not(.green, footer) {
     background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
+	background-size: 400%;
 	animation: gradient 15s ease infinite;
 }
 
